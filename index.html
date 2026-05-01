@@ -676,7 +676,7 @@
   <header>
     <div class="title-stamp">DIET DIARY · 2026</div>
     <h1>나의 다이어트 일기</h1>
-    <p class="subtitle">75kg → 67kg, 한 달의 기록</p>
+    <p class="subtitle">76.2kg → 67kg, 한 달의 기록</p>
     <div class="header-decoration"></div>
     <div id="todayDate" style="font-family: 'Nanum Pen Script', cursive; color: var(--ink-light); font-size: 15px;"></div>
   </header>
@@ -711,13 +711,13 @@
       <h2>목표까지의 여정</h2>
       
       <div class="weight-display">
-        <div class="weight-current"><span id="currentWeight">75.0</span><span class="unit">kg</span></div>
-        <div class="weight-meta" id="weightMeta">시작 체중 75kg · 목표 67kg</div>
+        <div class="weight-current"><span id="currentWeight">76.2</span><span class="unit">kg</span></div>
+        <div class="weight-meta" id="weightMeta">시작 체중 76.2kg · 목표 67kg</div>
       </div>
       
       <div class="progress-bar-wrap">
         <div class="progress-labels">
-          <span>75kg</span>
+          <span>76.2kg</span>
           <span>67kg ✦</span>
         </div>
         <div class="progress-bar">
@@ -733,7 +733,7 @@
         </div>
         <div class="stat">
           <div class="stat-label">남은 양</div>
-          <div class="stat-value"><span id="remainKg">8.0</span>kg</div>
+          <div class="stat-value"><span id="remainKg">9.2</span>kg</div>
         </div>
         <div class="stat">
           <div class="stat-label">기록일</div>
@@ -855,7 +855,7 @@
 const START_DATE = new Date('2026-05-01');
 const SMALL_SHOW_DATE = new Date('2026-05-09');
 const BIG_SHOW_DATE = new Date('2026-05-30');
-const START_WEIGHT = 75.0;
+const START_WEIGHT = 76.2;
 const TARGET_WEIGHT = 67.0;
 
 const PHASES = {
@@ -1020,7 +1020,7 @@ function renderProgress() {
   
   let metaText = '';
   if (lost <= 0) {
-    metaText = '시작 체중 75kg · 목표 67kg';
+    metaText = '시작 체중 76.2kg · 목표 67kg';
   } else {
     metaText = `시작에서 ${lost.toFixed(1)}kg 감량 · ${remain.toFixed(1)}kg 남음`;
   }
@@ -1124,7 +1124,7 @@ function renderChart() {
       scales: {
         y: {
           min: 65,
-          max: 77,
+          max: 78,
           grid: { color: 'rgba(58, 46, 31, 0.08)' },
           ticks: {
             font: { family: "'Gowun Batang', serif", size: 11 },
